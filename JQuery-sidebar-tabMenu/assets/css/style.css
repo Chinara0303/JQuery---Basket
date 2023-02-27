@@ -1,0 +1,96 @@
+body{
+    background-color: rgb(231, 231, 231);
+}
+
+.sidebar{
+    width: 250px;
+    padding: 20px ;
+    background-color: #fff;
+    height: 100vh;
+    transform: translate(-200px);
+    transition: all 1s;
+    position: relative;
+    z-index: 2;
+}
+.show-sidebar{
+    transform: translate(0);
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+
+}
+.sidebar-top{
+    padding: 15px 0;
+    position: relative;
+}
+.sidebar-top .logo a,.icon{
+    font-size: 20px;
+    font-weight: 600;
+}
+.sidebar-top .icon i{
+    position: absolute;
+    right: -10px;
+    bottom: 18px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.sidebar-center{
+    margin: 30px 0;
+    padding: 15px 0;
+}
+.sidebar-center ul li{
+    margin-bottom: 5px;
+}
+.sidebar-bottom{
+    margin-top: 50px;
+}
+
+.sidebar-bottom a i{
+    font-size: 20px;
+}
+.overlay{
+    position: fixed; 
+    display: none; 
+    width: 100%; 
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5); 
+    cursor: pointer; 
+}
+
+.tab-menu{
+    width: 400px;
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 100%;
+}
+.tab-menu .heading{
+    border-radius: 10px;
+    padding: 8px;
+    transition: all .4s;
+    cursor: pointer;
+}
+.active-heading{
+    background-color: black ;
+    color: white;
+}
+.tab-menu .content{
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
